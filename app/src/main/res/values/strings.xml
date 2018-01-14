@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GAA Score Counter</string>
+
+    <string name="logoDesc">GAA logo</string>
+    <string name="homeTitle">Home Team</string>
+    <string name="awayTitle">Away Team</string>
+    <string name="scoreDigits">0 - 0</string>
+    <string name="scoreText">(0 points)</string>
+
+    <string name="goal">Goal</string>
+    <string name="point">Point</string>
+    <string name="reset">Reset</string>
 </resources>
