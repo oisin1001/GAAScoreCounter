@@ -9,11 +9,17 @@ public class MainActivity extends AppCompatActivity {
 
     // These are my variables for scores
     int goalsTeamA = 0, pointsTeamA = 0, goalsTeamB = 0, pointsTeamB = 0;
+    TextView scoreViewA, scoreViewB, pointsViewA, pointsViewB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        scoreViewA = (TextView) findViewById(R.id.team_a_score);
+        pointsViewA = (TextView) findViewById(R.id.team_a_scoreInPoints);
+        scoreViewB = (TextView) findViewById(R.id.team_b_score);
+        pointsViewB = (TextView) findViewById(R.id.team_b_scoreInPoints);
     }
 
     /**
@@ -21,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
      */
     public void resetScore(View view) {
         goalsTeamA = 0;
-        goalsTeamB = 0;
         pointsTeamA = 0;
+        goalsTeamB = 0;
         pointsTeamB = 0;
+
         displayForTeamA(goalsTeamA, pointsTeamA);
         displayForTeamB(goalsTeamB, pointsTeamB);
     }
@@ -67,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
      * @param points the number of points to display
      */
     public void displayForTeamA(int goals, int points) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        TextView pointsView = (TextView) findViewById(R.id.team_a_scoreInPoints);
-        scoreView.setText(String.valueOf(goals) + " - " + String.valueOf(points));
-        pointsView.setText("(" + (String.valueOf(goals * 3 + points)) + " points)");
+//        scoreViewA = (TextView) findViewById(R.id.team_a_score);
+//        pointsViewA = (TextView) findViewById(R.id.team_a_scoreInPoints);
+        scoreViewA.setText(String.valueOf(goals) + " - " + String.valueOf(points));
+        pointsViewA.setText("(" + (String.valueOf(goals * 3 + points)) + " points)");
     }
 
     /**
@@ -80,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
      * @param points the number of points to display
      */
     public void displayForTeamB(int goals, int points) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        TextView pointsView = (TextView) findViewById(R.id.team_b_scoreInPoints);
-        scoreView.setText(String.valueOf(goals) + " - " + String.valueOf(points));
-        pointsView.setText("(" + (String.valueOf(goals * 3 + points)) + " points)");
+//        scoreViewB = (TextView) findViewById(R.id.team_b_score);
+//        pointsViewB = (TextView) findViewById(R.id.team_b_scoreInPoints);
+        scoreViewB.setText(String.valueOf(goals) + " - " + String.valueOf(points));
+        pointsViewB.setText("(" + (String.valueOf(goals * 3 + points)) + " points)");
     }
 }
