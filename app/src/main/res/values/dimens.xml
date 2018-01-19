@@ -5,6 +5,13 @@
 
 
     <dimen name="titleSize">18sp</dimen>
+    <dimen name="topOfScoreboard">56dp</dimen>
     <dimen name="scoreDigitsSize">56sp</dimen>
+    <dimen name="buttonMargin">24dp</dimen>
+    <dimen name="smallerMargin">8dp</dimen>
     <dimen name="scoreTextSize">20sp</dimen>
+    <dimen name="topMargin">16dp</dimen>
+
+    <dimen name="logoHeight">40dp</dimen>
+    <dimen name="logoMargin">12dp</dimen>
 </resources>

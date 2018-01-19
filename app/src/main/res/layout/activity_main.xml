@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="@dimen/topOfScoreboard"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/topMargin"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
                     android:text="@string/homeTitle"
@@ -38,7 +38,7 @@
                     android:id="@+id/team_a_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/smallerMargin"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
                     android:text="@string/scoreDigits"
@@ -59,18 +59,18 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/buttonMargin"
                     android:onClick="goalForTeamA"
                     android:text="@string/goal" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/smallerMargin"
                     android:onClick="pointForTeamA"
                     android:text="@string/point" />
 
@@ -80,7 +80,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/topMargin"
                 android:background="@android:color/darker_gray" />
 
             <LinearLayout
@@ -92,7 +92,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/topMargin"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
                     android:text="@string/awayTitle"
@@ -103,7 +103,7 @@
                     android:id="@+id/team_b_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/smallerMargin"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
                     android:text="@string/scoreDigits"
@@ -123,18 +123,18 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/buttonMargin"
                     android:onClick="goalForTeamB"
                     android:text="@string/goal" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/buttonMargin"
+                    android:layout_marginRight="@dimen/buttonMargin"
+                    android:layout_marginTop="@dimen/smallerMargin"
                     android:onClick="pointForTeamB"
                     android:text="@string/point" />
 
@@ -143,9 +143,9 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/logoHeight"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="@dimen/logoMargin"
             android:contentDescription="@string/logoDesc"
             android:src="@drawable/gaa_logo" />
 
@@ -154,7 +154,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="0dp"
             android:onClick="resetScore"
             android:text="@string/reset" />
 
